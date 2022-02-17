@@ -75,7 +75,6 @@ h6 {
 }
 
 body {
-  scroll-behavior: smooth;
   font-family: "Inter";
 }
 .lock body {
@@ -564,6 +563,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 30px;
 }
 @media (min-width: 87.5em) {
   .footer__navi {
@@ -844,6 +844,7 @@ body {
   padding-left: 0.9375rem;
   position: absolute;
   left: 63%;
+  z-index: 2;
   top: 20%;
   display: flex;
   justify-content: center;
@@ -945,6 +946,7 @@ body {
   width: 21.75rem;
   height: 44.375rem;
   position: relative;
+  z-index: 3;
 }
 .form-box__inner img {
   top: 0;
@@ -1055,6 +1057,7 @@ body {
 
 .advantages {
   animation: scal 3s forwards;
+  z-index: 1;
   width: 100%;
   position: relative;
   margin-bottom: 4.625rem;
@@ -2296,6 +2299,7 @@ body {
 
 .name input {
   padding-bottom: 0.625rem;
+  border-radius: 0;
   margin-top: 0.9375rem;
   width: 100%;
   outline: none;
@@ -2303,6 +2307,7 @@ body {
 }
 
 .tel input {
+  border-radius: 0;
   padding-bottom: 0.625rem;
   margin-top: 0.9375rem;
   width: 100%;
@@ -2331,6 +2336,7 @@ body {
   background-size: cover;
 }
 .time input {
+  border-radius: 0;
   padding-bottom: 0.625rem;
   margin-top: 0.9375rem;
   outline: none;
@@ -2342,6 +2348,7 @@ body {
 }
 
 .count-reis input {
+  border-radius: 0;
   padding-bottom: 0.625rem;
   margin-top: 0.9375rem;
   width: 100%;
@@ -2497,6 +2504,7 @@ input[type=radio]:checked + label:after {
   width: 100%;
   outline: none;
   border-bottom: 2px solid #A3A3A3;
+  border-radius: 0;
 }
 
 .count-kind input {
@@ -2505,6 +2513,7 @@ input[type=radio]:checked + label:after {
   width: 100%;
   outline: none;
   border-bottom: 2px solid #A3A3A3;
+  border-radius: 0;
 }
 
 .count-kind-a input {
@@ -2513,6 +2522,7 @@ input[type=radio]:checked + label:after {
   width: 100%;
   outline: none;
   border-bottom: 2px solid #A3A3A3;
+  border-radius: 0;
 }
 
 .time-transfer {
@@ -2534,6 +2544,7 @@ input[type=radio]:checked + label:after {
   margin-bottom: 0 !important;
 }
 .comm input {
+  border-radius: 0;
   padding-bottom: 0.625rem;
   outline: none;
   padding: 0.625rem;
@@ -2728,6 +2739,7 @@ input[type=radio]:checked + label:after {
   padding-bottom: 0.625rem;
   margin-top: 0.9375rem;
   width: 100%;
+  border-radius: 0;
   outline: none;
   border-bottom: 2px solid #A3A3A3;
 }
@@ -2751,36 +2763,6 @@ input[type=radio]:checked + label:after {
 
 .modal-open {
   overflow: hidden;
-}
-
-.kor, kor-a {
-  position: absolute;
-  top: -140px;
-}
-@media (max-width: 61.25em) {
-  .kor, kor-a {
-    top: -70px;
-  }
-}
-@media (max-width: 52.5em) {
-  .kor, kor-a {
-    top: -50px;
-  }
-}
-@media (max-width: 49.5625em) {
-  .kor, kor-a {
-    top: 70px;
-  }
-}
-@media (max-width: 46.25em) {
-  .kor, kor-a {
-    top: 110px;
-  }
-}
-@media (max-width: 27.75em) {
-  .kor, kor-a {
-    top: 180px;
-  }
 }
 .swiper {
   overflow: hidden;
